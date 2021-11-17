@@ -97,9 +97,9 @@ class WillPopScope extends StatefulWidget {
   const WillPopScope({
     Key? key,
     required this.child,
-    required this.onWillPop,
-  }) : assert(child != null),
-       super(key: key);
+    this.onWillPop,
+  })  : assert(child != null),
+        super(key: key);
 
   /// The widget below this widget in the tree.
   ///
